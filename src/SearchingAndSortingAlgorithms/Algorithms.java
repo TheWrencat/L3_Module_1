@@ -42,5 +42,14 @@ public class Algorithms {
 				return currentWord;
 	}
 	
+	public static Boolean containsSOS(List<String>message) {
+		
+		for(int i = 0; i < message.size(); i++) {
+			if(message.get(i).equals("...---...")) {
+				return true;
+			}
+		}return false;
+	}
+	
 	//Add other methods here
 }
